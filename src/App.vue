@@ -7,6 +7,8 @@
                handle=".handle-cat"
                animation="300"
                ghostClass="ghost-el"
+               chosenClass="chosen-el"
+               dragClass="drag-el"
 
     >
       <template #item="{ element: category }">
@@ -19,7 +21,7 @@
               </div>
               <span class="px-2 font-bold">{{ category.title }}</span>
             </div>
-            <MoveButton class="handle handle-cat"/>
+            <MoveButton class="handle-cat"/>
           </div>
 
           <draggable v-if="category.isVisible"
@@ -32,11 +34,12 @@
                      animation="300"
                      ghostClass="ghost-el"
                      chosenClass="chosen-el"
+                     dragClass="drag-el"
           >
             <template #item="{ element: doc }">
               <li class="px-4 py-2 border relative">
                 {{ doc }}
-                <MoveButton class="handle handle-doc"/>
+                <MoveButton class="handle-doc"/>
               </li>
             </template>
           </draggable>

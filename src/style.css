@@ -18,9 +18,11 @@
 }
 
 .chosen-el {
-    @apply draggable-shadow text-black;
+    @apply draggable-shadow;
 }
 
-
+.drag-el {
+    @apply opacity-100 text-black;
+}
 
 
