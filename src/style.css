@@ -6,9 +6,7 @@
     @apply max-w-[1220px] mx-auto p-10;
 }
 
-.drag-cat {
-    @apply text-blue-800;
-}
-.ghost-cat {
+.ghost-el {
     @apply text-gray-300;
 }
+

@@ -6,8 +6,7 @@
                group="categories"
                handle=".handle-cat"
                animation="300"
-               dragClass="drag-cat"
-               ghostClass="ghost-cat"
+               ghostClass="ghost-el"
     >
       <template #item="{ element: category }">
         <li>
@@ -24,11 +23,14 @@
 
           <draggable v-if="category.isVisible"
                      v-model="category.docs"
-                     tag="ul" itemKey="doc"
+                     tag="ul"
+                     itemKey="doc"
                      group="docs"
                      class="pl-4 flex-grow max-w-[1144px]"
                      handle=".handle-doc"
-                     animation="300">
+                     animation="300"
+                     ghostClass="ghost-el"
+          >
             <template #item="{ element: doc }">
               <li class="px-4 py-2 border relative">
                 {{ doc }}
@@ -72,4 +74,5 @@ const categories = ref([
 const toggleVisibility = (category) => {
   category.isVisible = !category.isVisible;
 };
+
 </script>
