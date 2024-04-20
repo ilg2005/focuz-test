@@ -7,6 +7,7 @@
                handle=".handle-cat"
                animation="300"
                ghostClass="ghost-el"
+
     >
       <template #item="{ element: category }">
         <li>
@@ -30,6 +31,7 @@
                      handle=".handle-doc"
                      animation="300"
                      ghostClass="ghost-el"
+                     chosenClass="chosen-el"
           >
             <template #item="{ element: doc }">
               <li class="px-4 py-2 border relative">

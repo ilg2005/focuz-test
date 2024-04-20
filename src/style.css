@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .draggable-shadow {
+        box-shadow: 0 3px 16px rgba(0, 102, 255, 0.7);
+    }
+}
+
 .container {
     @apply max-w-[1220px] mx-auto p-10;
 }
@@ -10,3 +16,6 @@
     @apply text-gray-300;
 }
 
+.chosen-el {
+    @apply draggable-shadow text-black;
+}
