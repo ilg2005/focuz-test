@@ -19,7 +19,7 @@
               </div>
               <span class="px-2 font-bold">{{ category.title }}</span>
             </div>
-            <MoveButton class="handle-cat"/>
+            <MoveButton class="handle handle-cat"/>
           </div>
 
           <draggable v-if="category.isVisible"
@@ -36,7 +36,7 @@
             <template #item="{ element: doc }">
               <li class="px-4 py-2 border relative">
                 {{ doc }}
-                <MoveButton class="handle-doc"/>
+                <MoveButton class="handle handle-doc"/>
               </li>
             </template>
           </draggable>

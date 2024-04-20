@@ -6,6 +6,7 @@
     .draggable-shadow {
         box-shadow: 0 3px 16px rgba(0, 102, 255, 0.7);
     }
+
 }
 
 .container {
@@ -19,3 +20,7 @@
 .chosen-el {
     @apply draggable-shadow text-black;
 }
+
+
+
+
