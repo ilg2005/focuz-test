@@ -27,8 +27,4 @@
 .svg-fill path {
   color: #8E9CBB;
 }
-
-.svg-fill:hover path {
-  color: #06F;
-}
 </style>

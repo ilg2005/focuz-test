@@ -25,4 +25,7 @@
     @apply opacity-100 text-black;
 }
 
+.chosen-el svg.svg-fill path {
+    color: #06F;
+}
 
