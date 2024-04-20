@@ -7,7 +7,7 @@
           <div class="flex self-center">
 
             <div @click="toggleVisibility(categoryWithMeals)">
-              <FoldButton v-if="categoryWithMeals.isVisible" class="mr-2  "/>
+              <FoldButton v-if="categoryWithMeals.isVisible" class="mr-2"/>
               <UnfoldButton v-else class="handle1 mr-2"/>
             </div>
             <span>{{ categoryWithMeals.category }}</span>
