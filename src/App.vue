@@ -5,7 +5,10 @@
                itemKey="title"
                group="categories"
                handle=".handle-cat"
-               animation="300">
+               animation="300"
+               dragClass="drag-cat"
+               ghostClass="ghost-cat"
+    >
       <template #item="{ element: category }">
         <li>
           <div class="px-4 py-2 border relative">
